@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo | Candido Equipamentos</title>
+    <meta
+      name="description"
+      content="Catálogo de equipamentos profissionais da Candido Equipamentos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#" aria-label="Candido Equipamentos">
+          <span class="brand__mark">CE</span>
+          <span>
+            <strong>Candido</strong>
+            <small>Equipamentos</small>
+          </span>
+        </a>
+
+        <div class="nav__links" aria-label="Navegação principal">
+          <a href="catalogo-completo.html">Catálogo completo</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__content">
+          <span class="eyebrow">Catálogo técnico</span>
+          <h1>Equipamentos confiáveis para operação pesada.</h1>
+          <p>
+            Encontre máquinas, acessórios e soluções industriais com atendimento
+            consultivo para escolher o equipamento certo para cada necessidade.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="catalogo-completo.html">
+              Ver catálogo completo
+            </a>
+            <a class="button button--ghost" href="#contato">Solicitar orçamento</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumo do catálogo">
+          <strong>+120</strong>
+          <span>itens disponíveis entre máquinas, ferramentas e acessórios.</span>
+          <div class="hero-card__meter">
+            <span></span>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section section--split" id="diferenciais">
+        <div>
+          <span class="eyebrow">Por que escolher</span>
+          <h2>Compra orientada, estoque selecionado e suporte próximo.</h2>
+        </div>
+        <div class="features">
+          <article>
+            <strong>Curadoria técnica</strong>
+            <p>Produtos organizados por aplicação para facilitar a escolha.</p>
+          </article>
+          <article>
+            <strong>Orçamento rápido</strong>
+            <p>Fluxo direto para solicitar preço, prazo e disponibilidade.</p>
+          </article>
+          <article>
+            <strong>Atendimento especializado</strong>
+            <p>Ajuda para comparar modelos e encontrar o melhor custo-benefício.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section catalog" id="catalogo">
+        <div class="section__header">
+          <div>
+            <span class="eyebrow">Produtos</span>
+            <h2>Catálogo de equipamentos</h2>
+          </div>
+          <p>
+            Use a busca ou filtre por categoria para encontrar rapidamente o que
+            você precisa.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar" aria-label="Filtros do catálogo">
+          <label class="search">
+            <span>Buscar produto</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Ex.: compressor, lavadora, empilhadeira"
+              autocomplete="off"
+            />
+          </label>
+
+          <div class="filters" id="categoryFilters" aria-label="Categorias"></div>
+        </div>
+
+        <div class="catalog__meta">
+          <p id="resultCount"></p>
+          <button class="link-button" id="clearFilters" type="button">
+            Limpar filtros
+          </button>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section contact" id="contato">
+        <div>
+          <span class="eyebrow">Orçamento</span>
+          <h2>Precisa de ajuda para escolher?</h2>
+          <p>
+            Conte sobre a aplicação, quantidade e prazo. A equipe retorna com a
+            indicação ideal.
+          </p>
+        </div>
+        <a
+          class="button button--primary"
+          href="https://wa.me/5500000000000?text=Olá,%20quero%20solicitar%20um%20orçamento%20pelo%20catálogo."
+          target="_blank"
+          rel="noreferrer"
+        >
+          Chamar no WhatsApp
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Candido Equipamentos. Catálogo demonstrativo.</p>
+    </footer>
+
+    <script src="assets/catalogo.js"></script>
+  </body>
+</html>

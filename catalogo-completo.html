@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo completo | Candido Equipamentos</title>
+    <meta
+      name="description"
+      content="Catálogo completo de equipamentos, máquinas e acessórios da Candido Equipamentos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="catalog-page">
+    <header class="catalog-header">
+      <nav class="nav catalog-nav">
+        <a class="brand" href="catalogo.html" aria-label="Candido Equipamentos">
+          <span class="brand__mark">CE</span>
+          <span>
+            <strong>Candido</strong>
+            <small>Equipamentos</small>
+          </span>
+        </a>
+
+        <div class="nav__links" aria-label="Navegação principal">
+          <a href="catalogo.html">Início</a>
+          <a href="#resultados">Produtos</a>
+          <a href="#ajuda">Ajuda</a>
+        </div>
+      </nav>
+
+      <section class="catalog-hero">
+        <div>
+          <span class="eyebrow">Catálogo completo</span>
+          <h1>Encontre o equipamento certo sem garimpar no escuro.</h1>
+          <p>
+            Pesquise por nome, código, aplicação ou especificação. Combine
+            filtros e compare rapidamente as opções mais adequadas para sua
+            operação.
+          </p>
+        </div>
+
+        <div class="catalog-kpis" aria-label="Resumo do catálogo">
+          <article>
+            <strong id="totalProducts">0</strong>
+            <span>produtos</span>
+          </article>
+          <article>
+            <strong id="totalCategories">0</strong>
+            <span>categorias</span>
+          </article>
+          <article>
+            <strong>24h</strong>
+            <span>retorno médio</span>
+          </article>
+        </div>
+      </section>
+    </header>
+
+    <main class="catalog-main" id="resultados">
+      <section class="catalog-control-panel" aria-label="Pesquisa do catálogo">
+        <label class="catalog-search">
+          <span>O que você procura?</span>
+          <input
+            id="completeSearch"
+            type="search"
+            placeholder="Busque por compressor, obra, diesel, código..."
+            autocomplete="off"
+          />
+        </label>
+
+        <label class="catalog-select">
+          <span>Ordenar por</span>
+          <select id="sortSelect">
+            <option value="relevance">Mais relevantes</option>
+            <option value="name">Nome A-Z</option>
+            <option value="category">Categoria</option>
+            <option value="availability">Disponibilidade</option>
+          </select>
+        </label>
+
+        <div class="view-toggle" aria-label="Alternar visualização">
+          <button class="is-active" type="button" data-view="grid">Grade</button>
+          <button type="button" data-view="list">Lista</button>
+        </div>
+      </section>
+
+      <div class="catalog-layout">
+        <aside class="filter-panel" aria-label="Filtros do catálogo">
+          <div class="filter-panel__header">
+            <div>
+              <span class="eyebrow">Filtros</span>
+              <h2>Refine sua busca</h2>
+            </div>
+            <button class="link-button" id="clearAllFilters" type="button">
+              Limpar tudo
+            </button>
+          </div>
+
+          <div class="active-filters" id="activeFilters" aria-live="polite"></div>
+
+          <div class="filter-group">
+            <button class="filter-group__title" type="button" data-toggle-filter>
+              Categoria
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="filter-options" id="categoryOptions"></div>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group__title" type="button" data-toggle-filter>
+              Aplicação
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="filter-options" id="applicationOptions"></div>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group__title" type="button" data-toggle-filter>
+              Disponibilidade
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="filter-options" id="availabilityOptions"></div>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group__title" type="button" data-toggle-filter>
+              Faixa
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="filter-options" id="budgetOptions"></div>
+          </div>
+        </aside>
+
+        <section class="results-panel" aria-label="Resultados do catálogo">
+          <div class="results-panel__header">
+            <div>
+              <p id="completeResultCount">0 produtos encontrados</p>
+              <small id="completeResultHint">
+                Dica: pesquise também por aplicação, como oficina, obra ou
+                limpeza.
+              </small>
+            </div>
+            <a class="button button--primary button--compact" href="#ajuda">
+              Preciso de ajuda
+            </a>
+          </div>
+
+          <div class="complete-product-grid" id="completeProductGrid"></div>
+        </section>
+      </div>
+
+      <section class="catalog-help" id="ajuda">
+        <div>
+          <span class="eyebrow">Atendimento consultivo</span>
+          <h2>Não sabe qual modelo escolher?</h2>
+          <p>
+            Envie a aplicação, frequência de uso e ambiente de trabalho. A gente
+            indica uma opção compatível antes de você investir.
+          </p>
+        </div>
+        <a
+          class="button button--primary"
+          href="https://wa.me/5500000000000?text=Olá,%20quero%20ajuda%20para%20escolher%20um%20equipamento%20no%20catálogo."
+          target="_blank"
+          rel="noreferrer"
+        >
+          Solicitar recomendação
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Candido Equipamentos. Catálogo demonstrativo.</p>
+    </footer>
+
+    <script src="assets/catalogo-completo.js"></script>
+  </body>
+</html>
